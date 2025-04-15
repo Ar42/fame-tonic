@@ -26,4 +26,8 @@
   .button-shadow-sm {
     box-shadow: 2px 2px 10px 0px var(--color-accent-100);
   }
+
+  .header-bg {
+    background: linear-gradient(90deg, #fc004e 0%, #10cbe0 100%);
+  }
 }

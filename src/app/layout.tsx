@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { Urbanist, Figtree } from "next/font/google";
+
+import Header from "@/features/Layout/Header";
+
 import "./globals.css";
 
 const urbanist = Urbanist({
@@ -26,6 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Header />
       <body
         className={`${urbanist.variable} ${figtree.variable} font-urbanist min-h-screen bg-black`}
       >
