@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Urbanist, Figtree } from "next/font/google";
 
 import Header from "@/features/Layout/Header";
+import Navbar from "@/features/Layout/Navbar";
 
 import "./globals.css";
 
@@ -28,13 +29,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <>
       <Header />
-      <body
-        className={`${urbanist.variable} ${figtree.variable} font-urbanist min-h-screen bg-black`}
-      >
-        {children}
-      </body>
-    </html>
+      <html lang="en">
+        <body
+          className={`${urbanist.variable} ${figtree.variable} font-urbanist min-h-screen bg-black`}
+        >
+          <Navbar />
+          {children}
+        </body>
+      </html>
+    </>
   );
 }
