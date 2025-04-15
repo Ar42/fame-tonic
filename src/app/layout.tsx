@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${urbanist.variable} ${figtree.variable} font-urbanist`}
+        className={`${urbanist.variable} ${figtree.variable} font-urbanist min-h-screen bg-black`}
       >
         {children}
       </body>
