@@ -7,7 +7,7 @@
     Roboto, sans-serif;
 
   --color-accent-100: #00e7f9;
-  --color-red-100: #fc004e;
+  --color-danger-100: #fc004e;
   --color-gray-100: ##ababab;
 
   --text-xxs: 10px;
@@ -18,4 +18,12 @@
   --text-2xl-plus-line-height: 25px;
   --text-4xl-minus: 35px;
   --text-4xl-minus--line-height: 35px;
+
+  --radius-10: 10px;
+}
+
+@layer components {
+  .button-shadow-sm {
+    box-shadow: 2px 2px 10px 0px var(--color-accent-100);
+  }
 }
