@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 import Button from "@/components/Button";
-import ChevronRight from "@/icons/ChevronRight";
 
 const instructionsData: string[] = [
   "Start growing your influence right away—no waiting required!",
@@ -12,18 +11,16 @@ const instructionsData: string[] = [
 
 const Home = () => {
   return (
-    <section className="flex flex-col lg:flex-row-reverse items-start">
-      <div className="w-full lg:w-1/2 transform lg:-translate-y-20 lg:-translate-x-8.5 -z-10">
-        <Image
-          src="/images/mobile-mockup.png"
-          alt="logo"
-          height={619}
-          width={666}
-          className="w-full max-w-100 lg:max-w-150 h-80 lg:h-164.75 cursor-pointer mx-auto"
-        />
-      </div>
+    <section className="flex flex-col lg:flex-row-reverse items-start relative">
+      <Image
+        src="/images/mobile-mockup.png"
+        alt="logo"
+        height={619}
+        width={666}
+        className="w-full max-w-88 lg:max-w-full mx-auto lg:w-56/100 cursor-pointer object-contain lg:absolute lg:-right-20 lg:-top-14"
+      />
 
-      <div className="w-full lg:w-1/2">
+      <div className="w-full lg:w-52/100 z-10 mr-auto">
         <h2 className="text-xl-plus-line-height lg:text-4xl-minus font-extrabold font-urbanist lg:font-bold text-white text-center lg:text-left">
           Want to Turn Social Media Into a Profitable Career?
         </h2>
@@ -48,22 +45,32 @@ const Home = () => {
 
         <div className="flex flex-col lg:flex-col-reverse gap-9 lg:gap-7.5">
           <div>
-            <p className="text-sm leading-none font-medium text-gray-100 font-figtree text-center lg:text-left mb-6.25 lg:mb-3">
-              By clicking {"Get Started"}, you agree with Terms and Conditions,
-              Privacy Policy, Subscription Terms
+            <p className="text-sm font-medium text-gray-100 font-figtree text-center lg:text-left mb-6.25 lg:mb-3">
+              By clicking &quot;Get Started&quot;, you agree with Terms and
+              Conditions, Privacy Policy, Subscription Terms
             </p>
-            <p className="text-xxs leading-none font-medium text-gray-100 font-figtree text-center lg:text-left">
+
+            <p className="text-xxs font-medium text-gray-100 font-figtree text-center lg:text-left">
               Fametonic 2025 ©All Rights Reserved.
             </p>
           </div>
 
-          <div>
+          <div className="w-full lg:w-max">
             <Button
               label="GET STARTED"
               buttonShadow="sm"
               variant="danger"
-              icon={<ChevronRight />}
-              containerClassName="!w-full lg:!min-w-78.25 mb-2.5"
+              icon={
+                <Image
+                  src="/images/chevron-right.png"
+                  alt="logo"
+                  height={14}
+                  width={8}
+                  className="w-2 h-3.5"
+                  loading="eager"
+                />
+              }
+              containerClassName="!w-full lg:!w-78.25 mb-2.5"
             />
             <p className="text-xs leading-tight text-white font-figtree text-center">
               1-minute quiz for personalized Insights
