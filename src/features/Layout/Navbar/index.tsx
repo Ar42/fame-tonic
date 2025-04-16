@@ -25,7 +25,7 @@ const Navbar = () => {
         alt="logo"
         height={72}
         width={169}
-        className="w-42.25 h-18 cursor-pointer transform -translate-x-1/2 lg:translate-x-0"
+        className="w-25.25 lg:w-42.25 h-11 lg:h-18 cursor-pointer transform -translate-x-1/2 lg:translate-x-0"
         onClick={onLogoClick}
       />
 

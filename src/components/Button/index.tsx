@@ -39,7 +39,7 @@ const getBackgroundColor = ({
 }): string | undefined => {
   if (!variant) return;
 
-  if (fill === "contained" && variant === "danger") return "bg-danger";
+  if (fill === "contained" && variant === "danger") return "bg-danger-100";
 };
 
 const Button = (props: ButtonProps) => {

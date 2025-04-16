@@ -8,7 +8,7 @@
 
   --color-accent-100: #00e7f9;
   --color-danger-100: #fc004e;
-  --color-gray-100: ##ababab;
+  --color-gray-100: #ababab;
   --color-gray-200: #a9a9a9;
 
   --text-xxs: 10px;
@@ -19,6 +19,8 @@
   --text-2xl-plus-line-height: 25px;
   --text-4xl-minus: 35px;
   --text-4xl-minus--line-height: 35px;
+
+  --text-shadow-4xs: 0px 4px 4px;
 
   --radius-10: 10px;
 }
