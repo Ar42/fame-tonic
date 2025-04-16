@@ -16,8 +16,8 @@ const HamburgerMenuIcon = (props: SVGProps<SVGSVGElement>) => {
         x2="19"
         y2="1.03597"
         stroke="white"
-        stroke-width="2"
-        stroke-linecap="round"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
       <line
         x1="1"
@@ -25,8 +25,8 @@ const HamburgerMenuIcon = (props: SVGProps<SVGSVGElement>) => {
         x2="19"
         y2="7.03597"
         stroke="white"
-        stroke-width="2"
-        stroke-linecap="round"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
       <line
         x1="1"
@@ -34,8 +34,8 @@ const HamburgerMenuIcon = (props: SVGProps<SVGSVGElement>) => {
         x2="19"
         y2="13.036"
         stroke="white"
-        stroke-width="2"
-        stroke-linecap="round"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
     </svg>
   );

@@ -4,11 +4,12 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
+import Button from "@/components/Button";
+
+import HamburgerMenuIcon from "@/icons/HamburgerMenuIcon";
 import { RoutePaths } from "@/consts/routes";
 
 import { getMenuContents } from "./helper";
-import HamburgerMenuIcon from "@/icons/HamburgerMenuIcon";
-import Button from "@/components/Button";
 
 const Navbar = () => {
   const router = useRouter();
