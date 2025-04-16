@@ -8,13 +8,13 @@ import "./globals.css";
 
 const urbanist = Urbanist({
   subsets: ["latin"],
-  weight: ["400", "600", "700"], // customize as needed
+  weight: ["400", "500", "600", "700", "800", "900"],
   variable: "--font-urbanist",
 });
 
 const figtree = Figtree({
   subsets: ["latin"],
-  weight: ["400", "600", "700"], // customize as needed
+  weight: ["400", "500", "600", "700", "800", "900"],
   variable: "--font-figtree",
 });
 
