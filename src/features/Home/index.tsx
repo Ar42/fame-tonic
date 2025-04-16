@@ -12,14 +12,14 @@ const instructionsData: string[] = [
 
 const Home = () => {
   return (
-    <section className="flex flex-col lg:flex-row-reverse">
-      <div className="w-full lg:w-1/2">
+    <section className="flex flex-col lg:flex-row-reverse items-start">
+      <div className="w-full lg:w-1/2 transform lg:-translate-y-20 lg:-translate-x-8.5 -z-10">
         <Image
           src="/images/mobile-mockup.png"
           alt="logo"
           height={619}
           width={666}
-          className="w-full h-100 lg:h-169.75 cursor-pointer"
+          className="w-full max-w-100 lg:max-w-150 h-80 lg:h-164.75 cursor-pointer mx-auto"
         />
       </div>
 
