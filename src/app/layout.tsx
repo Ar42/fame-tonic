@@ -1,16 +1,20 @@
 import type { Metadata } from "next";
 import { Urbanist, Figtree } from "next/font/google";
+
+import Header from "@/features/Layout/Header";
+import Navbar from "@/features/Layout/Navbar";
+
 import "./globals.css";
 
 const urbanist = Urbanist({
   subsets: ["latin"],
-  weight: ["400", "600", "700"], // customize as needed
+  weight: ["400", "500", "600", "700", "800", "900"],
   variable: "--font-urbanist",
 });
 
 const figtree = Figtree({
   subsets: ["latin"],
-  weight: ["400", "600", "700"], // customize as needed
+  weight: ["400", "500", "600", "700", "800", "900"],
   variable: "--font-figtree",
 });
 
@@ -25,12 +29,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${urbanist.variable} ${figtree.variable} font-urbanist`}
-      >
-        {children}
-      </body>
-    </html>
+    <>
+      <Header />
+      <html lang="en">
+        <body
+          className={`${urbanist.variable} ${figtree.variable} font-urbanist bg-black min-h-screen `}
+        >
+          <main className="max-w-281 px-5 mx-auto lg:pl-28.5">
+            <Navbar />
+            {children}
+          </main>
+        </body>
+      </html>
+    </>
   );
 }
