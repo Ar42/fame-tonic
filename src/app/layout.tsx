@@ -33,7 +33,7 @@ export default function RootLayout({
       <Header />
       <html lang="en">
         <body
-          className={`${urbanist.variable} ${figtree.variable} font-urbanist bg-black min-h-screen `}
+          className={`${urbanist.variable} ${figtree.variable} font-urbanist bg-black min-h-screen mb-10 lg:mb-0`}
         >
           <main className="max-w-281 px-5 mx-auto lg:pl-28.5">
             <Navbar />
