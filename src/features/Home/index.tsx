@@ -11,16 +11,18 @@ const instructionsData: string[] = [
 
 const Home = () => {
   return (
-    <section className="flex flex-col lg:flex-row-reverse items-start relative">
-      <Image
-        src="/images/mobile-mockup.png"
-        alt="logo"
-        height={619}
-        width={666}
-        className="w-full max-w-88 lg:max-w-full mx-auto lg:w-56/100 cursor-pointer object-contain lg:absolute lg:-right-20 lg:-top-14"
-      />
+    <section className="lg:flex lg:flex-row-reverse">
+      <div className="lg:transform lg:scale-130 lg:translate-x-10 lg:translate-y-4.5 w-full">
+        <Image
+          src="/images/mobile-mockup.png"
+          alt="logo"
+          height={619}
+          width={666}
+          className="w-full cursor-pointer object-contain"
+        />
+      </div>
 
-      <div className="w-full lg:w-52/100 z-10 mr-auto">
+      <div className="w-full relative">
         <h2 className="text-xl-plus-line-height lg:text-4xl-minus font-extrabold font-urbanist lg:font-bold text-white text-center lg:text-left">
           Want to Turn Social Media Into a Profitable Career?
         </h2>
