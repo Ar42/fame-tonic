@@ -12,7 +12,7 @@ const instructionsData: string[] = [
 const Home = () => {
   return (
     <section className="lg:flex lg:flex-row-reverse">
-      <div className="lg:transform lg:scale-130 lg:translate-x-10 lg:translate-y-4.5 w-full">
+      <div className="lg:transform lg:scale-130 lg:-translate-y-4.5 w-full">
         <Image
           src="/images/mobile-mockup.png"
           alt="logo"
@@ -23,11 +23,11 @@ const Home = () => {
       </div>
 
       <div className="w-full relative">
-        <h2 className="text-xl-plus-line-height lg:text-4xl-minus font-extrabold font-urbanist lg:font-bold text-white text-center lg:text-left">
+        <h2 className="text-xl-plus lg:text-4xl-minus font-extrabold font-urbanist lg:font-bold text-white text-center lg:text-left">
           Want to Turn Social Media Into a Profitable Career?
         </h2>
 
-        <h3 className="text-xl-plus-line-height lg:text-4xl-minus font-extrabold font-urbanist lg:font-bold text-accent-100 text-shadow-4xs text-shadow-danger-100 text-center lg:text-left mb-5.5 lg:mb-4">
+        <h3 className="text-xl-plus lg:text-4xl-minus font-extrabold font-urbanist lg:font-bold text-accent-100 text-shadow-4xs text-shadow-danger-100 text-center lg:text-left mb-5.5 lg:mb-4">
           Discover your way to success with Fametonic:
         </h3>
 

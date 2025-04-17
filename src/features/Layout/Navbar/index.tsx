@@ -29,7 +29,7 @@ const Navbar = () => {
         onClick={onLogoClick}
       />
 
-      <ul className="hidden lg:flex gap-x-10 items-center">
+      <ul className="hidden lg:flex gap-x-10">
         {getMenuContents().map((item) => (
           <li
             key={item.name}
