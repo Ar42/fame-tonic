@@ -35,7 +35,7 @@ export default function RootLayout({
         <body
           className={`${urbanist.variable} ${figtree.variable} font-urbanist bg-black min-h-screen mb-10 lg:mb-0`}
         >
-          <main className="max-w-281 px-5 mx-auto lg:pl-28.5">
+          <main className="max-w-260 px-5 lg:px-0 mx-auto">
             <Navbar />
             {children}
           </main>
